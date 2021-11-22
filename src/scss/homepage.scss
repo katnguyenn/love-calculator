@@ -1,0 +1,37 @@
+$bodyFontColor: white;
+$backgroundColor: #830000;
+$bigFontSize: 48px;
+
+body {
+    background-color: $backgroundColor;
+    max-width: 960px;
+    margin: auto;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+h1 {
+    color: $bodyFontColor;
+    font-size: $bigFontSize;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    background-color: $bodyFontColor;
+    border: transparent;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+}
+
+
