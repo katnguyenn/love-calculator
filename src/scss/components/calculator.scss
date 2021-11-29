@@ -1,0 +1,17 @@
+@use '../base/base' as *;
+
+h1, p, label {
+    color: $bodyFontColor;
+}
+
+input, button {
+    border-radius: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+label {
+    margin-right: 30px;
+}
