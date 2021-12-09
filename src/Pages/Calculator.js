@@ -54,7 +54,15 @@ const Calculator = () => {
         event.preventDefault();
         await fetchData();
         setIsLoaded(true);
-        // setState('');
+    }
+
+    const handleReset = (event) => {
+        event.preventDefault();
+        setState({
+            fname: "",
+            sname: ""
+        })
+        setIsLoaded(false);
     }
 
     return (
@@ -84,22 +92,30 @@ const Calculator = () => {
                             onChange={handleChange} />
 
                     </label>
-                    <button
-                        className="compatibility-btn"
-                        onClick={handleSubmit}
-                    >
-                        Analyze Compatibility
+                    <div className="btns">
+                        <button
+                            className="compatibility-btn"
+                            onClick={handleSubmit}
+                        >
+                            Analyze Compatibility
                      </button>
-                    {isLoaded ?
-                        <Result
-                            fname={state.fname}
-                            sname={state.sname}
-                            percentage={state.percentage}
-                            result={state.result}
-                        />
-                        : null
-                    }
-
+                        <button
+                            className="reset-btn"
+                            onClick={handleReset}
+                        >
+                            Reset
+                    </button>
+                    </div>
+                        {isLoaded ?
+                            <Result
+                                fname={state.fname}
+                                sname={state.sname}
+                                percentage={state.percentage}
+                                result={state.result}
+                            />
+                            : null
+                        }
+                   
                 </form>
             </div>
         </div>

@@ -39,6 +39,10 @@ label {
     color: $basicTextColor;
 }
 
+.btns {
+    display: flex;
+}
+
 input, button {
     border-radius: 20px;
 }
@@ -46,3 +50,4 @@ input, button {
 button {
     background-color: $primaryColor;
 }
+
