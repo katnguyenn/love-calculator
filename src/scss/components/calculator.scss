@@ -53,3 +53,45 @@ button {
     background-color: $primaryColor;
 }
 
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: block;
+  }
+
+  .intro {
+    padding: 0;
+  }
+
+  .input-column {
+    height: 80%;
+  }
+}
+
+@media screen and (min-width: 653px) and (max-width: 1095px) {
+    form {
+        margin: 45% auto !important;
+    }
+}
+
+@media screen and (max-width: 1312px) {
+  form {
+    margin: 35% auto;
+  }
+
+  #their-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .container button {
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}

@@ -75,7 +75,7 @@ const Calculator = () => {
             </div>
             <div className="input-column">
                 <form>
-                    <label>
+                    <label id="your-name">
                         Your Name:
                     <input
                             type="text"
@@ -83,7 +83,7 @@ const Calculator = () => {
                             value={state.fname || ''}
                             onChange={handleChange} />
                     </label>
-                    <label>
+                    <label id="their-name">
                         Their Name:
                     <input
                             type="text"
